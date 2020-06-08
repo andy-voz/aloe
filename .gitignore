@@ -12,7 +12,7 @@ CTestTestfile.cmake
 _deps
 
 # output dir
-bin/
+build/
 
 # vim swp files
 *.swp

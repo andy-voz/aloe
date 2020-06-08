@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(Aloe VERSION 0.1 DESCRIPTION "Game Engine")
+project(Engine VERSION 0.1 DESCRIPTION "Game Engine")
 
-add_library(aloe SHARED
+add_library(aloe STATIC
             src/aloe.cpp)
 
 set_target_properties(
@@ -11,5 +11,5 @@ set_target_properties(
         VERSION ${PROJECT_VERSION}
         LIBRARY_OUTPUT_DIRECTORY bin)
 
-target_include_directories(aloe PRIVATE include)
+target_include_directories(aloe PUBLIC include)
 
