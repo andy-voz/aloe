@@ -1,7 +1,17 @@
 #include "aloe.h"
+#include "demo.h"
+#include <iostream>
 
-int main()
+void DemoApp::draw()
 {
-    aloe::hello();
-    return 0;
+    std::cout << "Welcome to Aloe!" << std::endl;
+}
+
+void DemoApp::update()
+{
+}
+
+aloe::Application* aloe::getApplication()
+{
+    return new DemoApp();
 }

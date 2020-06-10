@@ -9,4 +9,5 @@ set_target_properties(
         PROPERTIES
         RUNTIME_OUTPUT_DIRECTORY bin)
 
+target_include_directories(demo PRIVATE include)
 target_link_libraries(demo aloe)

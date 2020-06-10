@@ -1,6 +1,3 @@
 #pragma once
 
-namespace aloe
-{
-    void hello();
-}
+#include "app.h"

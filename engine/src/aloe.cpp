@@ -1,8 +1,8 @@
-#include "iostream"
 #include "aloe.h"
 
-void aloe::hello()
+int main(int argc, char** argv)
 {
-    std::cout << "Welcome to Aloe!!!" << std::endl;
+    aloe::Application* app = aloe::getApplication();
+    app->run();
+    delete(app);
 }
-
