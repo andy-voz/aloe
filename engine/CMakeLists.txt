@@ -17,4 +17,4 @@ target_include_directories(aloe PRIVATE lib/spdlog/include)
 
 link_directories()
 
-target_link_libraries(aloe PRIVATE ${CMAKE_SOURCE_DIR}/engine/lib/spdlog/build/libspdlog.a)
+target_link_libraries(aloe PRIVATE ${CMAKE_SOURCE_DIR}/engine/lib-compiled/libspdlog.a)
