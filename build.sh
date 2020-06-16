@@ -15,7 +15,7 @@ check_success
 
 echo "Running Make"
 cd build
-make
+make VERBOSE=0
 status=$?
 cd -
 check_success

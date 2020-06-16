@@ -13,4 +13,8 @@ set_target_properties(
         LIBRARY_OUTPUT_DIRECTORY bin)
 
 target_include_directories(aloe PUBLIC include)
+target_include_directories(aloe PRIVATE lib/spdlog/include)
 
+link_directories()
+
+target_link_libraries(aloe PRIVATE ${CMAKE_SOURCE_DIR}/engine/lib/spdlog/build/libspdlog.a)
