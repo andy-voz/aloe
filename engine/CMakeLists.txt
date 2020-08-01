@@ -5,7 +5,8 @@ project(Engine VERSION 0.1 DESCRIPTION "Game Engine")
 add_library(aloe STATIC
             src/aloe.cpp
             src/app.cpp
-            src/log.cpp)
+            src/log.cpp
+            src/events/event.cpp)
 
 set_target_properties(
         aloe
