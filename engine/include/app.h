@@ -2,7 +2,7 @@
 
 namespace aloe
 {
-    class Application 
+    class Application
     {
     public:
         virtual void draw() = 0;

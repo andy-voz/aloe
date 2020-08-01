@@ -1,10 +1,13 @@
 #include "app.h"
 
-void aloe::Application::run()
+namespace aloe
 {
-    while (true)
+    void Application::run()
     {
-        update();
-        draw();
+        while (true)
+        {
+            update();
+            draw();
+        }
     }
 }

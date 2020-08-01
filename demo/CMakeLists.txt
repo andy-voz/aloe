@@ -5,7 +5,7 @@ project(Demo VERSION 0.1 DESCRIPTION "Aloe Game Engine Demo")
 add_executable(demo src/demo.cpp)
 
 set_target_properties(
-        demo 
+        demo
         PROPERTIES
         RUNTIME_OUTPUT_DIRECTORY bin)
 

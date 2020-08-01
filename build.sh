@@ -9,9 +9,11 @@ check_success()
 }
 
 echo "Running CMake"
-cmake -S . -B build
+cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -S . -B build
 status=$?
 check_success
+
+mv build/compile_commands.json .
 
 echo "Running Make"
 cd build

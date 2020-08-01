@@ -16,3 +16,6 @@ build/
 
 # vim swp files
 *.swp
+
+# clangd index files
+.clangd/
